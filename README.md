@@ -1,42 +1,26 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/Letta-logo-RGB_GreyonTransparent_cropped_small.png">
-    <source media="(prefers-color-scheme: light)" srcset="assets/Letta-logo-RGB_OffBlackonTransparent_cropped_small.png">
-    <img alt="Letta logo" src="assets/Letta-logo-RGB_GreyonOffBlack_cropped_small.png" width="500">
-  </picture>
-</p>
-
 <div align="center">
-<h1>Letta (previously MemGPT)</h1>
+<h1>MYTH.OS</h1>
 
-<h3>
+**MYTH.OS is an open source framework for building dual core stateful agentic systems that implement the LLM OS schema.**
 
-[Homepage](https://letta.com) // [Documentation](https://docs.letta.com) // [Letta Cloud](https://forms.letta.com/early-access)
+LLM OS is Andrej Karpathy's concept of an operating system that uses an LLM as the CPU. It does so by implementing the various elements of a traditional operating system, such as memory, state, and i/o, as complements to the LLM. MYTH.OS is a fork of the **Letta** framework that extends it with a parallel processing dual core approach.
 
-</h3>
-
-**👾 Letta** is an open source framework for building stateful LLM applications. You can use Letta to build **stateful agents** with advanced reasoning capabilities and transparent long-term memory. The Letta framework is white box and model-agnostic.
-  
-[![Discord](https://img.shields.io/discord/1161736243340640419?label=Discord&logo=discord&logoColor=5865F2&style=flat-square&color=5865F2)](https://discord.gg/letta)
-[![Twitter Follow](https://img.shields.io/badge/Follow-%40Letta__AI-1DA1F2?style=flat-square&logo=x&logoColor=white)](https://twitter.com/Letta_AI)
-[![arxiv 2310.08560](https://img.shields.io/badge/Research-2310.08560-B31B1B?logo=arxiv&style=flat-square)](https://arxiv.org/abs/2310.08560)
 [![Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-silver?style=flat-square)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/cpacker/MemGPT?style=flat-square&label=Release&color=limegreen)](https://github.com/cpacker/MemGPT/releases)
-[![GitHub](https://img.shields.io/github/stars/cpacker/MemGPT?style=flat-square&logo=github&label=Stars&color=gold)](https://github.com/cpacker/MemGPT)
-
 </div>
 
 > [!NOTE]
-> **Looking for MemGPT?** You're in the right place!
+> **What does 'Dual Core' and 'Parallel Processing' Mean in this Context?**
 >
-> The MemGPT package and Docker image have been renamed to `letta` to clarify the distinction between MemGPT agents and the API server / runtime that runs LLM agents as *services*.
+> 'Dual Core' refers to using two separate LLMs as the CPUs in an LLM OS implementation.
 >
-> You use the **Letta _framework_** to create **MemGPT _agents_**. Read more about the relationship between MemGPT and Letta [here](https://www.letta.com/blog/memgpt-and-letta).
+> In the case of MYTH.OS, each such LLM is defined by an `ICON` file that describes its implementation. An `ICON` file contains information such as the inference model, the system prompt, fine-tuning parameters, control vectors, context window size, embedding type, and OS features such as tools and memory.
+>
+> MYTH.OS implements this dual core approach by allowing each core LLM to process the input separately. This can be done by addressing an input to a specific core LLM or by sending it to both simultaneously.
 
 ## ⚡ Quickstart
 
-The two main ways to install Letta are through **pypi** (`pip`) or via **Docker**:
-* **`pip`** (guide below) - the easiest way to try Letta, will default to using SQLite and ChromaDB for the database backends
+The two main ways to install MYTH.OS are through **pypi** (`pip`) or via **Docker**:
+* **`pip`** (guide below) - the easiest way to try MYTH.OS, will default to using SQLite and ChromaDB for the database backends
 * **Docker** (guide [here](https://docs.letta.com/install#run-letta-with-docker)) - recommended for production settings, will default to using Postgres (+ pgvector) for the database backend
 
 ### Step 1 - Install Letta using `pip`
