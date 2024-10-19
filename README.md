@@ -13,9 +13,9 @@
 >
 > MYTH.OS implements this dual core approach by allowing each core LLM to process the input separately. This can be done by addressing an input to a specific core LLM or by sending it to both simultaneously.
 
-## .aion
+## ANI
 
-MYTH.OS allows users to provide two `.aion` files that describe the two core LLMs. AION stands for "An I Object Notation". An `.aion` file is a json file that provides the parameters specified by the AION standard, which can be read [here](AION.md).
+MYTH.OS uses the [ANI](ANI.md) ("An I") database schema to describe each of its two core LLMs and their OS environments, such as tools and memory. This allows for saving and developing profiles and curating their combination.
 
 
 ## ⚡ Quickstart
