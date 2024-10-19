@@ -1,9 +1,7 @@
 <div align="center">
 <h1>MYTH.OS</h1>
 
-**MYTH.OS is an open source framework for building dual core stateful agentic systems that implement the LLM OS schema.**
-
-LLM OS is Andrej Karpathy's concept of an operating system that uses an LLM as the CPU. It does so by implementing the various elements of a traditional operating system, such as memory, state, and i/o, as complements to the LLM. MYTH.OS is a fork of the **Letta** framework that extends it with a parallel processing dual core approach.
+**MYTH.OS is an open source framework for building dual core stateful agentic systems that implement the LLM OS schema.** LLM OS is Andrej Karpathy's concept of an operating system that uses an LLM as the CPU. It does so by implementing the various elements of a traditional operating system, such as memory, state, and i/o, as complements to the LLM. MYTH.OS is a fork of the **Letta** framework that extends it with a parallel processing dual core approach.
 
 [![Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-silver?style=flat-square)](LICENSE)
 </div>
