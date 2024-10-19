@@ -13,6 +13,11 @@
 >
 > MYTH.OS implements this dual core approach by allowing each core LLM to process the input separately. This can be done by addressing an input to a specific core LLM or by sending it to both simultaneously.
 
+## .aion
+
+MYTH.OS allows users to provide two `.aion` files that describe the two core LLMs. AION stands for "An I Object Notation". An `.aion` file is a json file that provides the parameters specified by the AION standard, which can be read [here](AION.md).
+
+
 ## ⚡ Quickstart
 
 The two main ways to install MYTH.OS are through **pypi** (`pip`) or via **Docker**:
