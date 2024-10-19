@@ -1,7 +1,7 @@
 <div align="center">
-<h1>MYTH.OS</h1>
+<h1>mythOS</h1>
 
-**MYTH.OS is an open source framework for building dual core stateful agentic systems that implement the LLM OS schema.** LLM OS is Andrej Karpathy's concept of an operating system that uses an LLM as the CPU. It does so by implementing the various elements of a traditional operating system, such as memory, state, and i/o, as complements to the LLM. MYTH.OS is a fork of the **Letta** framework that extends it with a parallel processing dual core approach.
+**mythOS is an open source framework for building dual core stateful agentic systems that implement the LLM OS schema.** LLM OS is Andrej Karpathy's concept of an operating system that uses an LLM as the CPU. It does so by implementing the various elements of a traditional operating system, such as memory, state, and i/o, as complements to the LLM. mythOS is a fork of the **Letta** framework that extends it with a parallel processing dual core approach.
 </div>
 
 > [!NOTE]
@@ -9,19 +9,19 @@
 >
 > 'Dual Core' refers to using two separate LLMs as the CPUs in an LLM OS implementation.
 >
-> In the case of MYTH.OS, each such LLM is defined by an `ICON` file that describes its implementation. An `ICON` file contains information such as the inference model, the system prompt, fine-tuning parameters, control vectors, context window size, embedding type, and OS features such as tools and memory.
+> In the case of mythOS, each such LLM is defined by an `ICON` file that describes its implementation. An `ICON` file contains information such as the inference model, the system prompt, fine-tuning parameters, control vectors, context window size, embedding type, and OS features such as tools and memory.
 >
-> MYTH.OS implements this dual core approach by allowing each core LLM to process the input separately. This can be done by addressing an input to a specific core LLM or by sending it to both simultaneously.
+> mythOS implements this dual core approach by allowing each core LLM to process the input separately. This can be done by addressing an input to a specific core LLM or by sending it to both simultaneously.
 
 ## ANI
 
-MYTH.OS uses the [ANI](ANI.md) ("An I") database schema to describe each of its two core LLMs and their OS environments, such as tools and memory. This allows for saving and developing profiles and curating their combination.
+mythOS uses the [ANI](ANI.md) ("An I") database schema to describe each of its two core LLMs and their OS environments, such as tools and memory. This allows for saving and developing profiles and curating their combination.
 
 
 ## ⚡ Quickstart
 
-The two main ways to install MYTH.OS are through **pypi** (`pip`) or via **Docker**:
-* **`pip`** (guide below) - the easiest way to try MYTH.OS, will default to using SQLite and ChromaDB for the database backends
+The two main ways to install mythOS are through **pypi** (`pip`) or via **Docker**:
+* **`pip`** (guide below) - the easiest way to try mythOS, will default to using SQLite and ChromaDB for the database backends
 * **Docker** (guide [here](https://docs.letta.com/install#run-letta-with-docker)) - recommended for production settings, will default to using Postgres (+ pgvector) for the database backend
 
 ### Step 1 - Install Letta using `pip`
