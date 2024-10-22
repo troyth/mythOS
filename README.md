@@ -24,11 +24,11 @@ memGPT implements such an LLM OS by focusing on the paging back and forth betwee
 
 memGPT has been implemented as the open source framework, Letta. mythOS is a fork of Letta that primarily updates the paging algorithm.
 
-## Paging Algorithm
+### Paging Algorithm
 mythOS implements a novel schema for Archival Storage based on mythology. This is achieved by unique Functions and alternative modules for the Queue Manager that allow for different interfaces to inference, such as long-form documents, image, etc.
 
-## Milestones
-mythOS will be used to build mythOS, so an accurate roadmap is not possible to draft.
+### Milestones
+mythOS itself will be used to build mythOS, so an accurate roadmap is not possible to draft.
 
 
 ## ⚡ Quickstart
