@@ -2,15 +2,13 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/mythOS_logo_greyOnTrans.png">
     <source media="(prefers-color-scheme: light)" srcset="assets/mythOS_logo_charcoalOnTrans.png">
-    <img alt="mythOS logo" src="assets/mythOS_logo_charcoalOnTrans.png" width="500">
+    <img alt="mythOS logo" src="assets/mythOS_logo_charcoalOnTrans.png" width="300">
   </picture>
 </p>
 
 <div align="center">
-<h1>mythOS</h1>
 
-
-**mythOS is an open source framework for curating agents that respond to inputs so similarly to existing humans as to be indistinguishable from them. In other words, an agent that acts as a `Turing Mirror`, a spin on the Turing Test in which the machine is able to convince the user that it is communicating with itself.**
+**mythOS** is an open source framework for curating agents that respond to inputs so similarly to existing humans as to be indistinguishable from them. In other words, an agent that acts as a `Turing Mirror`, a spin on the Turing Test in which the machine is able to convince the user that it is communicating with itself.
 
 </div>
 
