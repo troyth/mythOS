@@ -16,7 +16,7 @@
 </div>
 
 ## Schema
-mythOS implements an application-specific version of the **LLM OS** concept popularized by Andrej Karpathy and schematized in the form of **memGPT**.
+mythOS implements an application-specific version of the [**LLM OS**](https://www.youtube.com/watch?v=zjkBMFhNj_g&t=2536s) concept popularized by Andrej Karpathy and schematized in the form of [**memGPT**](https://memgpt.ai/).
 
 LLM OS reimagines the metaphor of an operating system by replacing the CPU with an LLM, allowing it to achieve statefulness through memory storage, peripheral i/o, and a library of subroutines. In his schema, Karpathy imagined the fixed content window of an LLM to be akin to RAM, the fast memory immediately accessible by a CPU.
 
