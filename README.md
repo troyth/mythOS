@@ -11,7 +11,7 @@
 <div align="center">
 
 **mythOS** is an open source framework for curating agents that respond to inputs so similarly to existing humans as to be indistinguishable from them. In other words, an agent that acts as a `Turing Mirror`, a spin on the Turing Test in which the machine is able to convince the user that it is communicating with itself.
-
+***
 </div>
 
 ## Schema
