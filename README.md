@@ -10,7 +10,7 @@
 
 <div align="center">
 
-**mythOS** is an open source framework for creating agents that respond to inputs so similarly to existing humans as to be indistinguishable from them. We introduce the notion of a `Turing Mirror` to capture this ambition: a version of the Turing Test in which the machine is able to convince the human user that it is communicating with itself.
+**mythOS** is an open source framework for creating agents that respond to inputs so similarly to existing humans as to be indistinguishable from them. We introduce the notion of a **"Turing Mirror"** to capture this ambition: a version of the Turing Test in which the machine is able to convince the human user that it is communicating with itself.
 <br><br>
 ***
 </div>
