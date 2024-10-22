@@ -24,17 +24,15 @@ memGPT implements such an LLM OS by focusing on the paging back and forth betwee
 
 memGPT has been implemented as the open source framework, Letta. mythOS is a fork of Letta that primarily updates the paging algorithm.
 
+<img alt="Fig.3 from the memGPT paper illustrating the concept of paging into and out of the context window" src="assets/memGPT_fig3.png" width="1600">
+
 ### Paging Algorithm
 mythOS implements a novel schema for Archival Storage based on mythology. This is achieved by unique Functions and alternative modules for the Queue Manager that allow for different interfaces to inference, such as long-form documents, image, etc.
-
-<img alt="Fig.3 from the memGPT paper" src="assets/memGPT_fig3.png" width="1600">
 
 ### Milestones
 mythOS itself will be used to build mythOS, so an accurate roadmap is not possible to draft.
 
-
 ## ⚡ Quickstart
-
 mythOS is a customized version of Letta, so installing and running it is as simple as following the instructions for doing so with Letta but using the code in this repository in place of the original Letta code. These install instructions are below:
 
 The two main ways to install Letta are through **pypi** (`pip`) or via **Docker**:
