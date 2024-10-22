@@ -27,6 +27,8 @@ memGPT has been implemented as the open source framework, Letta. mythOS is a for
 ### Paging Algorithm
 mythOS implements a novel schema for Archival Storage based on mythology. This is achieved by unique Functions and alternative modules for the Queue Manager that allow for different interfaces to inference, such as long-form documents, image, etc.
 
+<img alt="Fig.3 from the memGPT paper" src="assets/memGPT_fig3.png" width="1600">
+
 ### Milestones
 mythOS itself will be used to build mythOS, so an accurate roadmap is not possible to draft.
 
