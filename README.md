@@ -1,3 +1,4 @@
+<br><br>
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/mythOS_logo_greyOnTrans.png">
@@ -5,7 +6,6 @@
     <img alt="mythOS logo" src="assets/mythOS_logo_charcoalOnTrans.png" width="300">
   </picture>
 </p>
-
 <br><br>
 
 <div align="center">
