@@ -33,7 +33,7 @@ mythOS itself will be used to build mythOS, so an accurate roadmap is not possib
 
 ## ⚡ Quickstart
 
-mythOS is a customized Letta, so installing and running it is as simple as following the instructions for doing so with Letta but using the code in this repository in place of the original Letta code. These install instructions are below:
+mythOS is a customized version of Letta, so installing and running it is as simple as following the instructions for doing so with Letta but using the code in this repository in place of the original Letta code. These install instructions are below:
 
 The two main ways to install Letta are through **pypi** (`pip`) or via **Docker**:
 * **`pip`** (guide below) - the easiest way to try mythOS, will default to using SQLite and ChromaDB for the database backends
