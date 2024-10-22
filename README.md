@@ -1,3 +1,11 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/mythOS_logo_greyOnTrans.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/mythOS_logo_charcoalOnTrans.png">
+    <img alt="mythOS logo" src="assets/mythOS_logo_charcoalOnTrans.png" width="500">
+  </picture>
+</p>
+
 <div align="center">
 <h1>mythOS</h1>
 
