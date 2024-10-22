@@ -1,26 +1,32 @@
 <div align="center">
 <h1>mythOS</h1>
 
-**mythOS is an open source framework for building dual core stateful agentic systems that implement the LLM OS schema.** LLM OS is Andrej Karpathy's concept of an operating system that uses an LLM as the CPU. It does so by implementing the various elements of a traditional operating system, such as memory, state, and i/o, as complements to the LLM. mythOS is a fork of the **Letta** framework that extends it with a parallel processing dual core approach.
+
+**mythOS is an open source framework for curating agents that respond to inputs so similarly to existing humans as to be indistinguishable from them. In other words, an agent that acts as a `Turing Mirror`, a spin on the Turing Test in which the machine is able to convince the user that it is communicating with itself.**
+
 </div>
 
-> [!NOTE]
-> **What does 'Dual Core' and 'Parallel Processing' Mean in this Context?**
->
-> 'Dual Core' refers to using two separate LLMs as the CPUs in an LLM OS implementation.
->
-> In the case of mythOS, each such LLM is defined by an `ICON` file that describes its implementation. An `ICON` file contains information such as the inference model, the system prompt, fine-tuning parameters, control vectors, context window size, embedding type, and OS features such as tools and memory.
->
-> mythOS implements this dual core approach by allowing each core LLM to process the input separately. This can be done by addressing an input to a specific core LLM or by sending it to both simultaneously.
+## Schema
+mythOS implements an application-specific version of the **LLM OS** concept popularized by Andrej Karpathy and schematized in the form of **memGPT**.
 
-## ANI
+LLM OS reimagines the metaphor of an operating system by replacing the CPU with an LLM, allowing it to achieve statefulness through memory storage, peripheral i/o, and a library of subroutines. In his schema, Karpathy imagined the fixed content window of an LLM to be akin to RAM, the fast memory immediately accessible by a CPU.
 
-mythOS uses the [ANI](ANI.md) ("An I") database schema to describe each of its two core LLMs and their OS environments, such as tools and memory. This allows for saving and developing profiles and curating their combination.
+memGPT implements such an LLM OS by focusing on the paging back and forth between RAM and long-term storage, just as a typical operating system does to provide the CPU with the data it needs at each tick of the clock. Its authors refer to this as "virtual context management," allowing for a virtually infinite context window so long as the LLM has infinite clock ticks––each referred to as a `heartbeat`--to reach into disk memory to swap in relevant context.
+
+memGPT has been implemented as the open source framework, Letta. mythOS is a fork of Letta that primarily updates the paging algorithm.
+
+## Paging Algorithm
+mythOS implements a novel schema for Archival Storage based on mythology. This is achieved by unique Functions and alternative modules for the Queue Manager that allow for different interfaces to inference, such as long-form documents, image, etc.
+
+## Milestones
+mythOS will be used to build mythOS, so an accurate roadmap is not possible to draft.
 
 
 ## ⚡ Quickstart
 
-The two main ways to install mythOS are through **pypi** (`pip`) or via **Docker**:
+mythOS is a customized Letta, so installing and running it is as simple as following the instructions for doing so with Letta but using the code in this repository in place of the original Letta code. These install instructions are below:
+
+The two main ways to install Letta are through **pypi** (`pip`) or via **Docker**:
 * **`pip`** (guide below) - the easiest way to try mythOS, will default to using SQLite and ChromaDB for the database backends
 * **Docker** (guide [here](https://docs.letta.com/install#run-letta-with-docker)) - recommended for production settings, will default to using Postgres (+ pgvector) for the database backend
 
@@ -94,13 +100,7 @@ In Letta, all agents are stored/persisted in the same database, so the agents yo
 
 ## 🤗 How to contribute
 
-Letta is an open source project built by over a hundred contributors. There are many ways to get involved in the Letta OSS project!
-
-* **Contribute to the project**: Interested in contributing? Start by reading our [Contribution Guidelines](https://github.com/cpacker/MemGPT/tree/main/CONTRIBUTING.md).
-* **Ask a question**: Join our community on [Discord](https://discord.gg/letta) and direct your questions to the `#support` channel.
-* **Report ssues or suggest features**: Have an issue or a feature request? Please submit them through our [GitHub Issues page](https://github.com/cpacker/MemGPT/issues).
-* **Explore the roadmap**: Curious about future developments? View and comment on our [project roadmap](https://github.com/cpacker/MemGPT/issues/1533).
-* **Join community events**: Stay updated with the [event calendar](https://lu.ma/berkeley-llm-meetup) or follow our [Twitter account](https://twitter.com/Letta_AI).
+Coming soon...
 
 ---
 
